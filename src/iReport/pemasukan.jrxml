@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b3329db4-5750-423c-a9c8-f28cdd0f2f1f">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     sampah.`Tanggal` AS sampah_Tanggal,
+     sampah.`No_Handphone` AS sampah_No_Handphone,
+     sampah.`Jenis_Sampah` AS sampah_Jenis_Sampah,
+     sampah.`Berat_Sampah` AS sampah_Berat_Sampah,
+     sampah.`Verifikator` AS sampah_Verifikator,
+     sampah.`Rupiah_Sampah` AS sampah_Rupiah_Sampah
+FROM
+     `sampah` sampah]]>
+	</queryString>
+	<field name="sampah_Tanggal" class="java.lang.String"/>
+	<field name="sampah_No_Handphone" class="java.lang.String"/>
+	<field name="sampah_Jenis_Sampah" class="java.lang.String"/>
+	<field name="sampah_Berat_Sampah" class="java.lang.String"/>
+	<field name="sampah_Verifikator" class="java.lang.String"/>
+	<field name="sampah_Rupiah_Sampah" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
